@@ -17,4 +17,8 @@ public class BestLoanRates {
 
     } // End Main
 
+    public static float getRates(int loanTermInYears) {
+        return 0.0f;
+    }
+
 } // End BestLoanRates Class
