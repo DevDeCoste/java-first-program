@@ -37,4 +37,8 @@ public class SavingsCalculator {
         return remainingDays;
     } // End remainingDaysInMonth Method
 
+    public float calculate() {
+        return sumOfCredits() - sumOfDebits();
+    }
+
 }
