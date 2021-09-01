@@ -8,6 +8,10 @@ public class SavingsCalculator {
     private float[] credits;
     private float[] debits;
 
+    public static void main(String[] args) {
+
+    }
+
     public SavingsCalculator(float[] credits, float[] debits) {
         this.credits = credits;
         this.debits = debits;
