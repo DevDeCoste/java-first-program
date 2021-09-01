@@ -9,8 +9,20 @@ public class SavingsCalculator {
     private float[] debits;
 
     public static void main(String[] args) {
+        String[] creditsAsString = args[0].split(",");
+        String[] debitsAsString = args[1].split(",");
+        float[] credits = new float[creditsAsString.length];
+        float[] debits = new float[debitsAsString.length];
 
-    }
+        for(int i = 0; i < creditsAsString.length; i++) {
+            credits[i] = Float.parseFloat(creditsAsString[i]);
+        }
+
+        for(int i = 0; i < debitsAsString.length; i++) {
+            debits[i] = Float.parseFloat(debitsAsString[i]);
+        }
+
+    } // End Main
 
     public SavingsCalculator(float[] credits, float[] debits) {
         this.credits = credits;
