@@ -16,8 +16,12 @@ public class MortgageCalculator {
 
     private int getNumberOfPayments() {
         return termInYears * 12;
-
     } // End getNumberOfPayments method
+
+    private float getMonthlyInterestRate() {
+        float interestRate = annualRate / 100;
+        return interestRate;
+    }
 
 
 } // End MortgageCalculator class
