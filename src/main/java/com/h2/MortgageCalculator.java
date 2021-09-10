@@ -11,6 +11,13 @@ public class MortgageCalculator {
         this.loanAmount = loanAmount;
         this.termInYears = termInYears;
         this.annualRate = annualRate;
-    }
+    } // Mortgage Calc Constructor
 
-}
+
+    private int getNumberOfPayments() {
+        return termInYears * 12;
+
+    } // End getNumberOfPayments method
+
+
+} // End MortgageCalculator class
