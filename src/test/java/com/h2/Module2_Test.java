@@ -72,7 +72,7 @@ public class Module2_Test {
         for (int i = 1; i < 10; i++) {
             assertEquals(2 * i, App.doubleTheNumber(i), i + " should be " + 2 * i);
         }
-    }
+    } // Test
 
     @Test
     public void m02_02_assertPrivateMethodExistence() {
