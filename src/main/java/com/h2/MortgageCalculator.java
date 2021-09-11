@@ -15,6 +15,10 @@ public class MortgageCalculator {
         this.annualRate = annualRate;
     } // Mortgage Calc Constructor
 
+    public static void main(String[] args) {
+
+    } // Main method
+
 
     private int getNumberOfPayments() {
         return termInYears * 12;
