@@ -1,5 +1,3 @@
-package com.h2;
-
 public class Finance {
 
     public final static String BEST_LOAN_RATES = "bestLoanRates";
