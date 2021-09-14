@@ -19,8 +19,8 @@ public class MortgageCalculator {
     public static void main(String[] args) {
 
         long loanAmount = com.h2.Utilities.getLongValue(args[0]);
-        int termInYears = Integer.parseInt(args[1]);
-        float annualRate = Float.parseFloat(args[2]);
+        int termInYears = com.h2.Utilities.getIntValue(args[1]);
+        float annualRate = com.h2.Utilities.getFloatValue(args[2]);
 
         MortgageCalculator calculator = new MortgageCalculator(loanAmount,termInYears,annualRate);
         calculator.calculateMonthlyPayment();
