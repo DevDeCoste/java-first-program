@@ -46,5 +46,28 @@ public class Finance {
         }
     } // End executeCommand Method
 
+    public static void main(String[] args) {
+
+        String command = args[0];
+
+        //Checking if key is available at entered command
+        if(!(commandsToUsage.containsKey(command))) {
+            System.out.println(command + ": command not found");
+            return;
+        }
+
+        Boolean isValidCommand = validateCommandArguments(args);
+
+        if(!isValidCommand) {
+            commandsToUsage.get(args[0]);
+            return;
+        }
+
+        executeCommand(command,Arrays.copyOfRange(args, 1, args.length));
+
+
+
+    } // End Main Method
+
 
 } // End Finance Class
