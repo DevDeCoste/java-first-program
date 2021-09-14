@@ -23,7 +23,11 @@ public class Finance {
                 return args.length == 4;
         }
         return false;
-    }
+    } // End validateCommandArguments Method
+
+    private static void executeCommand(String command,String[] arguments) {
+
+    } // End executeCommand Method
 
 
 } // End Finance Class
