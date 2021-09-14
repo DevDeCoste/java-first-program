@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.platform.commons.util.ReflectionUtils.*;
 
 public class Module6_Test {
-    private final String classToFind = "com.h2.Utilities";
+    private final String classToFind = "Utilities";
 
 
     public Optional<Class<?>> getUtilitiesClass() {
