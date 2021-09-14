@@ -1,6 +1,7 @@
 import com.h2.BestLoanRates;
 import com.h2.MortgageCalculator;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
@@ -63,7 +64,7 @@ public class Finance {
             return;
         }
 
-        executeCommand(command,Arrays.copyOfRange(args, 1, args.length));
+        executeCommand(command, Arrays.copyOfRange(args, 1, args.length));
 
 
 
