@@ -2,7 +2,6 @@ package com.h2;
 
 import javax.swing.text.Utilities;
 import java.text.DecimalFormat;
-import com.h2.Utilities;
 
 public class MortgageCalculator {
 
@@ -19,7 +18,7 @@ public class MortgageCalculator {
 
     public static void main(String[] args) {
 
-        long loanAmount = Utilities.getLongValue(args[0]);
+        long loanAmount = com.h2.Utilities.getLongValue(args[0]);
         int termInYears = Integer.parseInt(args[1]);
         float annualRate = Float.parseFloat(args[2]);
 
