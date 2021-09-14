@@ -4,7 +4,7 @@ public class Utilities {
         try{
             Long.parseLong(in);
         } catch (NumberFormatException e) {
-            throw IllegalArgumentException(in + " cannot be converted into a 'long' value. Exiting program."in + " cannot be converted into a 'long' value. Exiting program.");
+            throw new IllegalArgumentException(in + " cannot be converted into a 'long' value. Exiting program.");
         }
         return out;
     }
