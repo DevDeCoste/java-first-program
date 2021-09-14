@@ -1,3 +1,6 @@
+import com.h2.BestLoanRates;
+import com.h2.MortgageCalculator;
+
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
@@ -26,7 +29,21 @@ public class Finance {
     } // End validateCommandArguments Method
 
     private static void executeCommand(String command,String[] arguments) {
+        switch(command) {
+            case BEST_LOAN_RATES:
+                System.out.println("Finding the best loan rates...");
+                BestLoanRates.main(arguments);
+                return;
+            case SAVINGS_CALCULATOR:
+                System.out.println("Finding your net savings...");
+                MortgageCalculator.main(arguments);
+                return;
+            case MORTGAGE_CALCULATOR:
+                System.out.println("Finding your monthly payment...");
+                MortgageCalculator.main(arguments);
+                return;
 
+        }
     } // End executeCommand Method
 
 
